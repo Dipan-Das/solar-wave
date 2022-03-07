@@ -5,6 +5,7 @@
 	font-family: 'Kelvetica';
 	src: url(../fonts/Kelvetica.otf);
 }
+
 @font-face{
 	font-family: 'Avenir-lt-pro-black';
 	src: url(../fonts/AvenirLTProBlack.otf);
@@ -13,6 +14,7 @@
 	font-family: 'Avenir-lt-pro-black-oblique';
 	src: url(../fonts/AvenirLTProBlackOblique.otf);
 }
+/* font-face */
 @font-face{
 	font-family: 'Avenir-lt-pro-book';
 	src: url(../fonts/AvenirLTProBook.otf);
@@ -977,3 +979,7 @@ height: 58px;
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-css-end(02-03-2022)=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+/* this is for git check */
