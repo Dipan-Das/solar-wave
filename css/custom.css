@@ -1,12 +1,10 @@
-/*starting*/
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @font-face {
 	font-family: 'Kelvetica';
-	src: url(.../fonts/Kelvetica.otf);
+	src: url(../fonts/Kelvetica.otf);
 }
-/* font face imported hello world! swagata */
 @font-face{
 	font-family: 'Avenir-lt-pro-black';
 	src: url(../fonts/AvenirLTProBlack.otf);
@@ -101,11 +99,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 .custom-pad {
-	padding:100px 0;
+	padding:70px 0;
 }
 
 /*
-        font-family: 'Exo', sans-serif;
+        font-family: 'Jost', sans-serif;
 
     font-family: 'Libre Baskerville', serif;
 */
@@ -113,7 +111,54 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	max-width: 1400px;
 }
-
+.custom-heading	{
+	text-align: center;
+}
+.custom-heading h3 {
+	position: relative;
+	display: inline-block;
+	font-family: 'Avenir-LT-Pro-Medium';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 75px;
+	text-transform: capitalize;
+	color: #0E4C75;
+	padding-bottom: 18px;
+	margin-bottom: 20px;
+}
+.custom-heading h3::before {
+	content: '';
+	position: absolute;
+	width: 127px;
+	height: 2px;
+	background-color: rgb(0, 0, 0);
+	bottom: 5px;
+	left: 0;
+	right: 27px;
+	margin: 0 auto;
+  }
+  .custom-heading h3::after {
+	content: '';
+	position: absolute;
+	width: 127px;
+	height: 2px;
+	background-color: rgb(0, 0, 0);
+	bottom: 0;
+	left: 27px;
+	right: 0;
+	margin: 0 auto;
+  }
+.custom-heading p	{
+	font-family: Jost;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #333333;
+}
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-toggle-nav-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
@@ -225,39 +270,703 @@ h1, h2, h3, h4, h5, h6 {
 .header-right-contact ul li a span {
   margin-right: 2px;
 }
-
-
-
-
-
-
-
 /*========================custom-header-end===========================*/
 
 /*========================custom-banner-start===========================*/
 .custom-banner {
-  padding: 220px 0;
+  padding-top: 166px;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 50px;
 }
 
-
+.banner-content h2 {
+  font-family: 'Kelvetica';
+  color: #fff;
+  font-size: 88px;
+}
+.banner-content h2::first-letter{
+	color: #ffc700;
+}
+.banner-content h4 {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Kelvetica';
+  line-height: 50px;
+}
+.banner-con-list {
+  margin-top: 50px;
+}
+.banner-con-list li {
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 16px;
+	font-family: 'Kelvetica';
+}
+.banner-con-list li span {
+  position: absolute;
+  left: 0;
+	
+}
+.banner-right {
+  position: relative;
+	text-align: right;
+}
+.banner-right-content {
+  display: inline-block;
+  background-color: #202020;
+  padding: 40px 30px 50px;
+  border-radius: 15px;
+  border: 1px dashed #fff;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  top: 78px;
+}
+.banner-right-content::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  right: 0;
+  width: 93%;
+  height: 94%;
+  border: 1px dashed #f1f1f1;
+  top: 12px;
+  bottom: auto;
+  border-radius: 15px;
+  z-index: -1;
+}
+.banner-right-content h1 {
+  color: #ffc700;
+  font-size: 110px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-shadow: -5px 0px 0px rgb(255, 255, 255);
+  letter-spacing: -4px;
+  line-height: 100px;
+}
+.banner-right-content h4 {
+  font-size: 87px;
+	font-family: 'Jost', sans-serif;
+  color: #fff;
+  text-shadow: 6px 6px 0px #4095ce;
+               
+}
+.banner-right-content ul li img {
+  height: 100px;
+}
+.banner-right-content ul li:first-child{
+	margin-bottom: 6px;
+}
+.banner-right-img img {
+  height: 600px;
+  object-fit: contain;
+}
+.banner-right-content-bg {
+  background-color: #fff;
+  width: 339px;
+  height: 420px;
+  position: absolute;
+  top: 11%;
+  border-radius: 15px;
+  left: 20px;
+}
+.banner-middle {
+  position: relative;
+  left: -50px;
+  top: 51px;
+}
+.banner-middle img {
+  height: 600px;
+}
+.banner-content {
+  margin-top: 125px;
+}
 /*========================custom-banner-end===========================*/
 
 
 
 
+/*===================custom-footer-start========================*/
+
+.footer-call-to-us-wrap {
+  background-color: #4195CE;
+}
+.footer-call-to-us-wrap {
+  background-color: #4195CE;
+  padding: 50px 40px;
+  border-radius: 50px 0;
+  border: 2px dashed #fff;
+}
+
+.footer-call-left h5 {
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.footer-call-left h5 span{
+	color: #FFC700;
+}
+.footer-call-left h4 {
+  font-size: 46px;
+  color: #fff;
+  display: inline-block;
+font-family: 'Jost', sans-serif;
+	font-weight: 700;
+}
+.footer-call-left h6 {
+  display: inline-block;
+  font-size: 34px;
+  color: #FFC700;
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+}
+.footer-call-left a {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 48px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  padding-left: 52px;
+  margin-top: 3px;
+}
+.footer-call-left a span {
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.footer-call-left a span img {
+  height: 40px;
+}
+.footer-call-right h5 {
+  display: inline-block;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  color: #FFC700;
+}
+.footer-call-right h4 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  display: inline-block;
+  font-size: 62px;
+  font-family: 'Jost', sans-serif;
+  line-height: 50px;
+  margin-left: 8px;
+  font-weight: 700;
+}
+.footer-call-right h6 {
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.footer-call-right p {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+.custom-btn {
+	background-color: #4195CE;
+	color: #fff;
+	border: none;
+	border-radius: 10px 0;
+	padding: 15px 46px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 25px;
+  }
+.footer-call-right .custom-btn {
+  display: inline-block;
+  background-color: #FFC700;
+}
+.footer-call-left {
+  position: relative;
+}
+.footer-call-left::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 190px;
+  width: 1px;
+  border-right: 1.7px dashed #273846;
+  top: 0;
+}
+.footer-call-right::after {
+  content: '';
+  position: absolute;
+  left: -34px;
+  height: 190px;
+  width: 1px;
+  border-right: 1.7px dashed #273846;
+  top: 0;
+}
+.footer-call-right {
+  position: relative;
+}
+.custom-footer {
+  background: linear-gradient(95.4deg, #202020 0.52%, #515151 100%);
+}
+.footer-logo {
+  text-align: center;
+  padding: 70px 0 50px;
+}
+.footer-logo a {
+  display: inline-block;
+}
+.footer-logo a img {
+  height: 32px;
+}
+.footer-col h4 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+.footer-col a {
+  font-size: 14px;
+  color: #fff;
+}
+.footer-col li {
+  position: relative;
+  margin-bottom: 23px;
+  padding-left: 32px;
+}	
+.footer-col-1 li span {
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #272727;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+}
+.footer-col p {
+  color: #fff;
+  line-height: 18px;
+}
+.footer-col-2 ul li {
+  padding-left: 0;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+.footer-col-2 ul li a{
+	font-size: 22px;
+}
+.footer-col-2 ul {
+  margin-top: 8px;
+}
+.footer-col-3 h4 {
+  text-align: center;
+}
+.footer-col-3 p {
+  text-align: center;
+  line-height: 22px;
+}
+.footer-col-4 li span, .footer-col-5 li span{
+	position: absolute;
+	left: 0;
+}
+.footer-col-4 li, .footer-col-5 li{
+	padding-left: 20px;
+}
+.footer-btm {
+  padding: 16px 0;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  text-align: center;
+}
+.footer-btm p {
+  color: #fff;
+}
 
 
+/*============================================inner-page 6.6kw=========================*/
 
+.inner-banner {
+  padding: 210px 0 197px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.inner-page-bg-wrap {
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-color: #fff;
+}
+.inner-banner-content h3 {
+  color: #fff;
+  font-size: 72px;
+	font-family: 'Avenir-LT-Pro-Medium';
+}
+.common-inner-bg {
+  margin-top: -80px;
+}
+.inner-solar-contact-left {
+  text-align: center;
+  background-color: #E2F3FF;
+  border-radius: 20px 0;
+  border: 1px dashed #0E4C75;
+  padding: 70px 30px;
+}
+.inner-solar-contact-left h4 {
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #0E4C75;
+	font-family: 'Avenir-lt-pro-book-heavy';
+	
+}
+.inner-solar-contact-left a.left-qyuerry-col-dp {
+  font-size: 48px;
+  font-weight: 900;
+  -webkit-text-stroke: 3px #4195CE;
+  color: transparent;
+  display: block;
+  margin: 6px 0 26px;
+}
+.inner-solar-contact-left a.left-qyuerry-col-dp span img {
+  height: 58px;
+}
+.inner-solar-contact-left a span {
+  display: inline-block;
+  transform: translateY(-7px);
+  margin-right: 3px;
+}
+.inner-solar-contact-left .custom-btn {
+  background-color: #333;
+  padding: 15px 160px;
+}
 
+.custom-form {
+  margin-top: -68px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 9;
+}
+.custom-form-wrap .custom-heading h3 {
+	font-size: 36px;
+	line-height: 42px;
+  padding-bottom: 30px;
+  }
+.inner-solar-contact-right .custom-form-wrap .custom-heading h3 {
+	color: #0d4c75;
+}
+.custom-form-wrap .custom-heading{
+	font-family: Avenir LT Pro;
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 54px;
+text-align: left;
+color: #fff;
+}
+.inner-solar-contact-right .custom-form-wrap {
+	border-radius: 45px 0px;
+	padding: 23px 25px 45px;
+  }
+.custom-form-wrap {
+  background-color: #fff;
+}
+.custom-form-wrap input{
+	font-family: Jost;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 6px;
+height: 58px;
 
-
-
-
-
-
-
-
-
+}
+.custom-form-wrap textarea {
+	height: 130px;
+  }
+.req-form-image-wrap{
+	padding-top: 51px;
+}
+.req-form-image-wrap img{
+  height: 475px;
+}
+.custom-form-wrap .custom-btn {
+	font-size: 18px;
+	background: #FFC700;
+	border-radius: 10px 0px;
+	width: 100%;
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+	color: #000;
+	padding: 13px 0;
+	margin-top: 14px;
+	border: 0;
+  }
+.inner-solar-contact-right .custom-form-wrap .custom-heading h3::before {
+	margin: 0;
+	background-color: #0d4c75;
+	
+  }
+.inner-solar-contact-right .custom-form-wrap .custom-heading h3::after {
+	margin: 0;
+	background-color: #0d4c75;
+	
+  }
+.inner-solar-contact-right .custom-form-wrap input {
+	border: 1px solid #D0D0D0;
+}
+.inner-solar-contact-right {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.inner-solar-cus-product-content {
+  text-align: left;
+}
+.inner-solar-cus-product-content .custom-heading h3 {
+  text-align: left;
+  padding-bottom: 74px;
+  margin-bottom: 32px;
+}
+.inner-solar-cus-product-content .custom-heading h3 span {
+  display: block;
+	font-family: 'Avenir-lt-pro-book';
+}
+.inner-solar-cus-product-content .custom-heading{
+	text-align: left;
+}
+.inner-solar-cus-product-content .custom-heading h3 span {
+  display: block;
+  font-family: 'Avenir-lt-pro-book';
+  position: absolute;
+  width: 210%;
+  line-height: 42px;
+}
+.inner-solar-cus-product-content .custom-heading h3::before {
+	margin: 0;
+	background-color: #0d4c75;
+}
+.inner-solar-cus-product-content .custom-heading h3::after {
+	margin: 0;
+	background-color: #0d4c75;
+}
+.procut-adv-list li {
+  font-size: 18px;
+  font-family: 'Avenir-lt-pro-book';
+  position: relative;
+  margin-bottom: 17px;
+  padding-left: 30px;
+}
+.procut-adv-list li span {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.procut-adv-list li span img {
+  height: 14px;
+}
+.inner-solar-cus-product-content .custom-btn {
+  display: inline-block;
+  margin-top: 26px;
+	background-color: #333333;
+}
+.inner-solar-cus-product-img {
+  position: relative;
+	z-index: 9;
+}
+.inner-solar-cus-product-img::after {
+  content: '';
+  position: absolute;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%, 64% 68%);
+  width: 490px;
+  height: 448px;
+  background-color: #aadcff;
+  z-index: -1;
+  bottom: 0;
+  right: -15px;
+}
+.inner-solar-cus-product-img img {
+  width: 90%;
+  transform: translate(40px,-36px);
+}
+.inner-solar-cus-products {
+  padding-top: 40px;
+}
+.custom-inverter .inner-solar-cus-product-img::after {
+  content: '';
+  position: absolute;
+  clip-path: polygon(0 0, 35% 68%, 100% 100%, 0 100%);
+  width: 490px;
+  height: 448px;
+  background-color: #FFD233;
+  z-index: -1;
+  bottom: 0;
+  right: auto;
+  left: 0;
+}
+.custom-inverter .inner-solar-cus-product-img img {
+  width: 66%;
+  transform: translate(91px,-66px);
+}
+.custom-inverter .inner-solar-cus-product-content {
+  padding-left: 100px;
+}
+.custom-inverter .inner-solar-cus-product-content .custom-heading h3 span{
+	width: 150%;
+}
+.inner-solar-cus-products.custom-inverter.custom-pad {
+  padding-top: 100px;
+}
+.custom-installetion .inner-solar-cus-product-content .custom-heading h3 span {width: 140%;}
+.custom-installetion .inner-solar-cus-product-content {
+  padding-left: 100px;
+}
+.solar-system-details .custom-heading{
+	text-align: left;
+}
+.solar-system-details .custom-heading h3 {
+  font-size: 30px;
+  line-height: 34px;
+}
+.solar-system-details .custom-heading h3 span {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  padding-top: 6px;
+}
+.solar-system-details .custom-heading h3::after , .solar-system-details .custom-heading h3::before{
+	margin: 0;
+	background-color: #0d4c75;
+}
+.solar-system-details-left .custom-btn {
+  display: inline-block;
+  background-color: #333;
+}
+.solar-system-details-left ul {
+  column-count: 2;
+	margin-top: 4px;
+	margin-bottom: 12px;
+}
+.solar-system-details-left ul li {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Avenir-lt-pro-book';
+  margin-bottom: 18px;
+}
+.solar-system-details-left ul li span {
+  padding-right: 10px;
+}
+.solar-system-details-left ul li span img {
+  height: 17px;
+  transform: translateY(-4px);
+}
+.annual-list li {
+  display: inline-block;
+  width: 46%;
+  background-color: #333;
+  margin: 0 7px;
+  border-radius: 30px 0;
+  text-align: center;
+  padding: 30px 28px;
+}
+.annual-list h2 {
+  color: #FFC700;
+  font-family: 'Jost', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  -webkit-text-stroke: 3px #fff;
+  line-height: 60px;
+	margin-bottom: 20px;
+}
+.annual-list h4 {
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 34px;
+	margin-bottom: 16px;
+}
+.annual-list p {
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 20px;
+}
+.custom-faq-dp .card {
+  background-color: transparent;
+}
+.cus-accor-card-dp li .card-header {
+  background-color: transparent;
+  border: 0;
+  padding: 25px 18px;
+}
+.custom-faq-dp .card {
+  background-color: transparent;
+  border: 0;
+}
+.cus-accor-card-dp {
+  column-count: 2;
+}
+.cus-accor-card-dp li {
+  background-color: #E2F3FF;
+  margin-bottom: 15px;
+  border-radius: 20px 0 0 0;
+	transition: all 0.3s ease-in-out;
+}
+.cus-accor-card-dp li:hover {
+  box-shadow: 0px 0px 16px rgba(226, 243, 255, 0.87);
+}
+.cus-accor-card-dp a.card-title {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  padding-left: 42px;
+  font-size: 18px;
+	font-family: 'Avenir-lt-pro-book-heavy';
+}
+.cus-accor-card-dp a.card-title span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: #FFC700;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 31px;
+  font-size: 15px;
+  color: #202020;
+  font-family: 'Avenir-lt-pro-book-heavy';
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+.cus-accor-card-dp .card-body {
+  padding-top: 0;
+}
+.custom-faq-dp.custom-pad .custom-heading h3 {
+  padding-left: 30%;
+  padding-right: 30%;
+}
 
 
 
